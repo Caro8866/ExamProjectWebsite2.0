@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Le Caviste | Wine Selection</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/productlist.css" />
+    <meta name="robots" content="noindex,nofollow" />
+  </head>
+  <body id="product_list">
+    <header class="NavBar">
+      <a id="home_link_mobile" href="index.html"> Le Caviste</a>
+      <!-- 1. Burger Menu Nav / 4. nav -->
+      <span class="cart"></span>
+      <!-- insert cart icon here -->
+      <div class="burger_menu">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+      </div>
+
+      <ul class="list_menu_burger">
+        <li class="first_menu_item">
+          <a class="menu_name1" href="index.html#WineCategories">The wines</a>
+
+          <!-- <div class="submenu">
+            <a href="">White</a><a href="">Red</a><a href="">Rosé</a
+            ><a href="">Sparkling</a><a href="">Cremant</a
+            ><a href="">Champagne</a><a href="">View all</a>
+          </div> -->
+        </li>
+        <li>
+          <a class="menu_name" href="index.html#NewsandEvents">News & Events</a>
+        </li>
+        <li><a class="menu_name" href="">About us</a></li>
+        <li><a class="menu_name" href="index.html#Contact">Contact</a></li>
+        <li class="flags">
+          <div class="flag_dk"></div>
+          <div class="flag_en"></div>
+        </li>
+      </ul>
+    </header>
+
+    <main>
+      <div class="contentWrapper">
+        <nav id="sticky_nav_menu">
+          <a class="home_link" href="index.html"> Le Caviste</a>
+
+          <ul class="list_menu_sticky">
+            <li class="submenu_access">
+              <a class="submenu_access" href="index.html#WineCategories"
+                >The wines</a
+              >
+              <div class="submenu">
+                <a href="">White</a><a href="">Red</a><a href="">Rosé</a
+                ><a href="">Sparkling</a> <a href="">Champagne</a
+                ><a href="">View all</a>
+              </div>
+            </li>
+            <li><a href="index.html#NewsandEvents">News & Events</a></li>
+            <li><a href="">About us</a></li>
+            <li><a href="index.html#Contact">Contact</a></li>
+            <li class="flags">
+              <div class="flag_dk"></div>
+
+              <div class="flag_en"></div>
+            </li>
+          </ul>
+        </nav>
+        <nav class="breadcrumb_menu">
+          <ol class="breadcrumbNav">
+            <li><a href="index.html">home</a></li>
+            <li><a href="index.html#WineCategories">Wines</a></li>
+            <li><a class="categoryName" href="">White</a></li>
+          </ol>
+        </nav>
+        <div id="headerSection">
+          <h1>champagne</h1>
+        </div>
+        <div class="topBar">
+          <div class="sortByDropDown">Sort by</div>
+        </div>
+        <div class="products_grid">
+          <!-- template parent-->
+          <template id="productCardTemplate" class="productCard">
+            <!-- container for template elements (cards)-->
+            <div class="template_card">
+              <img
+                src="Assets/bottle.png"
+                alt="Wine Bottle Image"
+                class="productImage"
+              />
+              <h3 class="productName">joy sauvignon</h3>
+
+              <p class="productPrice priceSec">DKK 120;-</p>
+
+              <div class="productActions">
+                <a class="viewBtn btn" href="productPage.html">view</a>
+                <a class="buyBtn btn" href="">buy</a>
+              </div>
+            </div>
+          </template>
+        </div>
+      </div>
+    </main>
+    <div id="paginationSec">
+      <a href="0">&laquo;</a>
+      <a href="#">1</a>
+      <a href="2">2</a>
+      <a href="#">3</a>
+      <a href="#">4</a>
+      <a href="#">5</a>
+      <a href="0">&raquo;</a>
+    </div>
+    <footer>
+      <div>
+        <div class="contentWrapper">
+          <div class="footercontainer1">
+            <div class="fc11">
+              <p>Would you like a first person experience?</p>
+              <p>
+                Come and <a>visit our bistro</a> to experience the wines and a
+                wide range of french cusine.
+              </p>
+            </div>
+            <div class="fc12">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2250.065658629326!2d12.539325615927327!3d55.67045838053135!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46525310d3050947%3A0x524247583bff8166!2sLe%20Caviste!5e0!3m2!1sca!2sdk!4v1654001828575!5m2!1sca!2sdk"
+                width="600"
+                height="200"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+            <div class="footercontainer2">
+              <div class="fc2">
+                <p class="footer_p">OPENING HOURS</p>
+                <div class="fc21">
+                  <div class="fc211">
+                    <p>Mon-Sat</p>
+                    <p>Sunday</p>
+                  </div>
+                  <div class="fc211">
+                    <p>11- 22</p>
+                    <p>Closed</p>
+                  </div>
+                </div>
+              </div>
+              <div class="fc2">
+                <p class="footer_p">LOCATION</p>
+                <p class="justifiedtext">
+                  Vesterbrogade 129 <br />
+                  1620 Copenhagen <br />Denmark
+                </p>
+              </div>
+              <div class="fc2">
+                <p class="footer_p">CONTACT</p>
+                <div class="fc213">
+                  <p>(+45) 53 50 51 29</p>
+                  <p>lecaviste.aps@gmail.com</p>
+                </div>
+              </div>
+              <div class="fc2">
+                <p class="footer_p">SOCIAL MEDIA</p>
+                <div class="fc24">
+                  <a href="https://www.facebook.com/lecavistecph">
+                    <img src="Assets/Vectorfacebook.svg" alt="facebook logo" />
+                  </a>
+                  <a href="#">
+                    <img src="Assets/Vectormail.svg" alt="mail logo" />
+                  </a>
+                  <a href="https://www.facebook.com/lecavistecph">
+                    <img src="Assets/Vectorinstagram.svg" alt="facebook logo" />
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="footercontainer3 hidden">
+              <a href="#">The wines</a>
+              <a href="#">News & events</a>
+              <a href="#">About us</a>
+              <a href="#">Contact</a>
+              <a href="https://www.instagram.com/le_caviste_cph/">Instagram</a>
+              <a href="https://www.facebook.com/lecavistecph">Facebook</a>
+            </div>
+          </div>
+        </div>
+        <div class="footercontainer4">
+          <p>Copyright &#169; <b>le caviste</b> 2022 FRØlab</p>
+          <p>all rights reserved</p>
+          <p>CVR:384943202</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="scripts/main.js"></script>
+    <script src="scripts/productList.js"></script>
+  </body>
+</html>

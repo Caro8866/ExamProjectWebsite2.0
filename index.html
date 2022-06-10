@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Le Caviste</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/homepage.css" />
+    <link rel="stylesheet" href="owlcarousel/owl.carousel.min.css" />
+    <link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css" />
+    <meta name="robots" content="noindex,nofollow" />
+  </head>
+  <body id="landing_page">
+    <header class="NavBar">
+      <a id="home_link_mobile" href="index.html"> Le Caviste</a>
+
+      <!-- 1. Burger Menu Nav / 4. nav -->
+      <span class="cart"></span>
+
+      <div class="burger_menu">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+      </div>
+
+      <ul class="list_menu_burger">
+        <li class="first_menu_item">
+          <a class="menu_name1" href="index.html#WineCategories">The wines</a>
+        </li>
+        <li>
+          <a class="menu_name" href="index.html#NewsandEvents">News & Events</a>
+        </li>
+        <li><a class="menu_name" href="">About us</a></li>
+        <li><a class="menu_name" href="index.html#Contact">Contact</a></li>
+        <li class="flags">
+          <div class="flag_dk"></div>
+          <div class="flag_en"></div>
+        </li>
+      </ul>
+    </header>
+    <main>
+      <!-- 2. top section including luhuih ogo and bg img-->
+      <section class="HeroTop">
+        <h1 class="logotype">Le Caviste</h1>
+
+        <video autoplay muted loop id="myVideo">
+          <source src="./Assets/hero-vid-2.mp4" type="video/mp4" />
+        </video>
+      </section>
+
+      <div class="contentWrapper">
+        <nav id="sticky_nav_menu">
+          <a class="home_link" href="index.html"> Le Caviste</a>
+
+          <ul class="list_menu_sticky">
+            <li class="submenu_access">
+              <a class="submenu_access" href="index.html#WineCategories"
+                >The wines</a
+              >
+              <div class="submenu">
+                <a href="">White</a><a href="">Red</a><a href="">Rosé</a
+                ><a href="">Sparkling</a> <a href="">Champagne</a
+                ><a href="">View all</a>
+              </div>
+            </li>
+            <li><a href="index.html#NewsandEvents">News & Events</a></li>
+            <li><a href="">About us</a></li>
+            <li><a href="index.html#Contact">Contact</a></li>
+            <li class="flags">
+              <div class="flag_dk"></div>
+              <div class="flag_en"></div>
+            </li>
+          </ul>
+        </nav>
+        <section id="TopQuote">
+          <!-- 3. Quote -->
+          <div class="open_quote"></div>
+          <h3 class="quote">life is too short to drink bad wine</h3>
+          <div class="close_quote"></div>
+        </section>
+        <!-- Wine Categories Section -->
+        <section id="WineCategories">
+          <h2 class="titlesection">THE WINES</h2>
+          <!-- Carosel of categories - MOBILE -->
+          <div class="owl-container">
+            <div class="owl-carousel owl-theme">
+              <div class="item">
+                <a href="productList.html" class="cws cws1 white">
+                  <img src="Assets/wines/alsace-sylvaner.png" alt="bottle" />
+                  <h4 class="textwine">WHITE</h4>
+                </a>
+              </div>
+              <div class="item">
+                <a href="#" class="cws cws1 red">
+                  <img src="Assets/wines/pommard-cru.png" alt="bottle" />
+                  <h4 class="textwine">RED</h4>
+                </a>
+              </div>
+              <div class="item">
+                <a href="#" class="cws cws1 rose">
+                  <img src="Assets/wines/bennezon-rose.png" alt="bottle" />
+                  <h4 class="textwine">ROSÉ</h4>
+                </a>
+              </div>
+              <div class="item">
+                <a href="#" class="cws cws1 cremant">
+                  <img src="Assets/wines/joy-brut.png" alt="bottle" />
+                  <h4 class="textwine">CRÉMANT</h4>
+                </a>
+              </div>
+              <div class="item">
+                <a href="#" class="cws cws1 champagne">
+                  <img
+                    src="Assets/wines/bennezon-expression.png"
+                    alt="bottle"
+                  />
+                  <h4 class="textwine">CHAMPAGNE</h4>
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- News & Events Section -->
+        <section id="NewsandEvents">
+          <h2 class="titlesection">NEWS & EVENTS</h2>
+
+          <!-- New Wines Section -->
+          <section id="newWines">
+            <h3 class="titlesection">NEW WINES</h3>
+            <!-- New wines go here -->
+            <div class="new_wines_wrapper">
+              <div class="new_wine_card new_wine1">
+                <img
+                  src="Assets/wines/joy-leclat.png"
+                  alt="Joy leclat"
+                  class="productImage"
+                />
+                <h3 class="productName">Joy l'Éclat</h3>
+                <h4 class="new">new!</h4>
+
+                <p class="productPrice priceSec">DKK 99;-</p>
+
+                <div class="productActions">
+                  <a class="viewBtn btn" href="productPage.html">view</a>
+                  <a class="buyBtn btn" href="">buy</a>
+                </div>
+              </div>
+
+              <div class="new_wine_card">
+                <img
+                  src="Assets/wines/joy-eros.png"
+                  alt="Joy eros"
+                  class="productImage"
+                />
+                <h3 class="productName">Joy Éros</h3>
+                <h4 class="new">new!</h4>
+
+                <p class="productPrice priceSec">DKK 96;-</p>
+
+                <div class="productActions">
+                  <a class="viewBtn btn" href="productPage.html">view</a>
+                  <a class="buyBtn btn" href="">buy</a>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- Events Section -->
+          <section id="Events">
+            <h3 class="titlesection">EVENTS</h3>
+            <div class="events_wrapper">
+              <article class="event event01">
+                <div class="transparentRectangle">
+                  <h4 class="eventText">Red Wine Tasting</h4>
+                  <time class="eventText">June 20th @ 16:00 -18:00</time> <br />
+                  <a class="event_link" href="">read more</a>
+                </div>
+              </article>
+
+              <article class="event event02">
+                <div class="transparentRectangle">
+                  <h4 class="eventText">Wine and Cheese Pairing</h4>
+                  <time class="eventText">July 2nd @ 17:00 -19:00</time><br />
+                  <a class="event_link" href="">read more</a>
+                </div>
+              </article>
+            </div>
+          </section>
+        </section>
+
+        <!-- Contacts sections -->
+        <!-- CONNECT TO NETLIFY -->
+        <section id="Contact">
+          <h2 class="titlesection">CONTACT</h2>
+          <article class="containerform">
+            <h2>Are we not picking up the phone?</h2>
+            <div class="fc241 some">
+              <a href="https://www.facebook.com/lecavistecph">
+                <img src="Assets/Vectorfacebook.svg" alt="facebook logo" />
+              </a>
+              <a href="#">
+                <img src="Assets/Vectormail.svg" alt="mail logo" />
+              </a>
+              <a href="https://www.facebook.com/lecavistecph">
+                <img src="Assets/Vectorinstagram.svg" alt="instagram logo" />
+              </a>
+            </div>
+            <h2 class="or">or</h2>
+            <div class="containerform1">
+              <form
+                class="formstyle-f1"
+                name="contact"
+                method="POST"
+                data-netlify="true"
+              >
+                <div>
+                  <div>
+                    <label for="fullname">Full name</label><br />
+                    <input
+                      type="text"
+                      id="fullname"
+                      name="fullname1"
+                      placeholder="Name"
+                      required
+                    />
+                  </div>
+                  <div>
+                    <label for="telephone">Telephone number</label><br />
+                    <input
+                      type="tel"
+                      id="telephone"
+                      name="telephone1"
+                      placeholder="XXXXX"
+                      required
+                    />
+                  </div>
+                  <div>
+                    <label for="email">E-mail address</label><br />
+                    <input
+                      type="email"
+                      id="email"
+                      name="email1"
+                      placeholder="xxx@xxx.xxx"
+                      required
+                    />
+                  </div>
+                </div>
+                <div id="formRight">
+                  <label for="message">Your message</label><br />
+                  <textarea
+                    id="message"
+                    name="message"
+                    placeholder="Bojour!"
+                    required
+                  ></textarea
+                  ><br />
+                </div>
+                <div class="containersub">
+                  <input class="sub" type="submit" value="SUBMIT MESSAGE" />
+                </div>
+              </form>
+              <!-- <form class="formstyle-f2">
+                rows="11"
+                    cols="40"
+              </form> -->
+            </div>
+          </article>
+        </section>
+      </div>
+    </main>
+    <footer>
+      <div>
+        <div class="contentWrapper">
+          <div class="footercontainer1">
+            <div class="fc11">
+              <p>Would you like a first person experience?</p>
+              <p>
+                Come and <a>visit our bistro</a> to experience the wines and a
+                wide range of french cusine.
+              </p>
+            </div>
+            <div class="fc12">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2250.065658629326!2d12.539325615927327!3d55.67045838053135!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46525310d3050947%3A0x524247583bff8166!2sLe%20Caviste!5e0!3m2!1sca!2sdk!4v1654001828575!5m2!1sca!2sdk"
+                width="600"
+                height="200"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+            <div class="footercontainer2">
+              <div class="fc2">
+                <p class="footer_p">OPENING HOURS</p>
+                <div class="fc21">
+                  <div class="fc211">
+                    <p>Mon-Sat</p>
+                    <p>Sunday</p>
+                  </div>
+                  <div class="fc211">
+                    <p>11- 22</p>
+                    <p>Closed</p>
+                  </div>
+                </div>
+              </div>
+              <div class="fc2">
+                <p class="footer_p">LOCATION</p>
+                <p class="justifiedtext">
+                  Vesterbrogade 129 <br />
+                  1620 Copenhagen <br />Denmark
+                </p>
+              </div>
+              <div class="fc2">
+                <p class="footer_p">CONTACT</p>
+                <div class="fc213">
+                  <p>(+45) 53 50 51 29</p>
+                  <p>lecaviste.aps@gmail.com</p>
+                </div>
+              </div>
+              <div class="fc2">
+                <p class="footer_p">SOCIAL MEDIA</p>
+                <div class="fc24">
+                  <a href="https://www.facebook.com/lecavistecph">
+                    <img src="Assets/Vectorfacebook.svg" alt="facebook logo" />
+                  </a>
+                  <a href="#">
+                    <img src="Assets/Vectormail.svg" alt="mail logo" />
+                  </a>
+                  <a href="https://www.facebook.com/lecavistecph">
+                    <img src="Assets/Vectorinstagram.svg" alt="facebook logo" />
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="footercontainer3 hidden">
+              <a href="#">The wines</a>
+              <a href="#">News & events</a>
+              <a href="#">About us</a>
+              <a href="#">Contact</a>
+              <a href="https://www.instagram.com/le_caviste_cph/">Instagram</a>
+              <a href="https://www.facebook.com/lecavistecph">Facebook</a>
+            </div>
+          </div>
+        </div>
+        <div class="footercontainer4">
+          <p>Copyright &#169; <b>le caviste</b> 2022 FRØlab</p>
+          <p>all rights reserved</p>
+          <p>CVR:384943202</p>
+        </div>
+      </div>
+    </footer>
+    <script src="owlcarousel/jquery.min.js"></script>
+    <script src="owlcarousel/owl.carousel.min.js"></script>
+    <script src="scripts/main.js"></script>
+  </body>
+</html>
