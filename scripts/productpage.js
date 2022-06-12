@@ -1,10 +1,9 @@
 const urlParams = new URLSearchParams(window.location.search);
 const id = urlParams.get("id");
 
-const url = "https://amorea.dk/WP-Exam/LeCaviste/wp-json/wp/v2/wine/76";
+// const url = "https://amorea.dk/WP-Exam/LeCaviste/wp-json/wp/v2/wine/76";
 
-// const url =
-//   "https://amorea.dk/WP-Exam/LeCaviste/wp-json/wp/v2/wine/" + id;
+const url = "https://amorea.dk/WP-Exam/LeCaviste/wp-json/wp/v2/wine/" + id;
 
 //fetch the data
 fetch(url)

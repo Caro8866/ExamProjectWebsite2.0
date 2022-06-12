@@ -30,9 +30,9 @@ function displayData(wines) {
     // CHANGE CONTENT
     clone.querySelector(".productName").textContent = wine.title.rendered;
     clone.querySelector(".productPrice").textContent = `DKK ${wine.price}`;
-    clone
-      .querySelector(".viewBtn")
-      .setAttribute("href", `productPage.html?_id=${wine.id}`);
+
+    clone.querySelector(".viewBtn").href = "productPage.html?id=" + wine.id;
+
     //image
     clone.querySelector(".productImage").src =
       wine._embedded["wp:featuredmedia"][0].source_url;
@@ -40,9 +40,7 @@ function displayData(wines) {
     //  doesn't work :()
 
     // clone
-    //   .querySelector("categoryName")
-    //   .setAttribute(
-    //     "href",
+    //   .querySelector("categoryName").href =
     //     `productList.html?category=${wine._embedded["wp:term"][0][0].name}`
     //   );
 
