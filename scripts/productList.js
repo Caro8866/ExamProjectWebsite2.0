@@ -33,16 +33,9 @@ function displayData(wines) {
 
     clone.querySelector(".viewBtn").href = "productPage.html?id=" + wine.id;
 
-    //image
+    // image
     clone.querySelector(".productImage").src =
       wine._embedded["wp:featuredmedia"][0].source_url;
-
-    //  doesn't work :()
-
-    // clone
-    //   .querySelector("categoryName").href =
-    //     `productList.html?category=${wine._embedded["wp:term"][0][0].name}`
-    //   );
 
     // GRAB PARENT
     const parent = document.querySelector(".products_grid");

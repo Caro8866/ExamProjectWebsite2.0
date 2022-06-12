@@ -49,5 +49,8 @@ function showWine(wine) {
   document.querySelector(".PPrecommended").textContent = wine.recommended_with;
 
   document.querySelector(".PPproductimg a img").src =
-    wine._embedded["wp:featuredmedia"][0].source_url;
+    wine["wp:featuredmedia"][0].source_url;
+
+  //     document.querySelector(".PPproductimg img").src =
+  //       wine._links["wp:featuredmedia"][0].source_url;
 }
