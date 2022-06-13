@@ -189,6 +189,9 @@ h2.PPname {
   border: 3px solid var(--color-navy);
   margin: 1rem;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 .relatedCard img {
   width: 80%;
@@ -209,8 +212,6 @@ h2.PPname {
   font-family: var(--font-primary);
   text-align: center;
   padding: 1rem;
-  margin-left: 3rem;
-  margin-right: 3rem;
 }
 .relatedPrice {
   text-align: center;
@@ -243,6 +244,12 @@ h2.PPname {
 .borderB {
   padding: 0.4rem;
 }
+.related_parent_container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-rows: repeat(auto-fit, minmax(250px, 1fr));
+  padding-bottom: 3rem;
+}
 /* @media only screen and (max-width: 699px) {
   .PP {
     margin: 3rem;
@@ -257,14 +264,17 @@ h2.PPname {
 }
 /*related product section for desktop*/
 @media only screen and (min-width: 600px) {
-  .PPrelated {
+  /* .PPrelated {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: auto auto;
+  } */
+  .related_parent_container {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   }
   .relatedCard {
     margin-top: 2rem;
-    grid-row: 2;
+
     border: 3px solid var(--color-navy);
   }
   .relatedWrapper {
@@ -283,6 +293,9 @@ h2.PPname {
   .PP h1 {
     border-bottom: 3px solid var(--color-navy);
   }
+  .related_parent_container {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
 }
 /*slideshow of related products*/
 
@@ -297,7 +310,7 @@ h2.PPname {
 }
 .PPrelated {
   position: relative;
-  overflow: hidden;
+  /* overflow: hidden; */
   grid-column: 2;
 }
 .pre-btn,
@@ -337,6 +350,9 @@ h2.PPname {
 @media only screen and (min-width: 1200px) {
   .PPquantity {
     justify-content: start;
+  }
+  .related_parent_container {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   }
 }
 @media only screen and (min-width: 1300px) {
