@@ -54,9 +54,3 @@ function showWine(wine) {
   //     document.querySelector(".PPproductimg img").src =
   //       wine._links["wp:featuredmedia"][0].source_url;
 }
-
-function characteristicsWine(characteristics) {
-  console.log(characteristics);
-}
-
-/* var light = document.getElementById("#light"); */

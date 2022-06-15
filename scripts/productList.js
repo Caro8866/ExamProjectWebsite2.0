@@ -4,6 +4,9 @@
 
 window.addEventListener("DOMContentLoaded", init);
 
+const urlParams = new URLSearchParams(window.location.search);
+const id = urlParams.get("id");
+
 function init(event) {
   loadWines();
 }
