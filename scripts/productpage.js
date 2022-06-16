@@ -3,11 +3,12 @@ const id = urlParams.get("id");
 
 // const url = "https://amorea.dk/WP-Exam/LeCaviste/wp-json/wp/v2/wine/76";
 
-const url = "https://amorea.dk/WP-Exam/LeCaviste/wp-json/wp/v2/wine/" + id;
+const url =
+  "https://amorea.dk/WP-Exam/LeCaviste/wp-json/wp/v2/wine/" + id + "?_embed";
 
 //add second url for related products
 const url2 =
-  "https://amorea.dk/WP-Exam/LeCaviste/wp-json/wp/v2/wine?per_page=3&?_embed";
+  "https://amorea.dk/WP-Exam/LeCaviste/wp-json/wp/v2/wine?_embed&per_page=3";
 
 //fetch the data for both
 fetch(url)
@@ -56,8 +57,8 @@ function showWine(wine) {
   // recommended with
   document.querySelector(".PPrecommended").textContent = wine.recommended_with;
 
-  document.querySelector(".PPproductimg a img").src =
-    wine["wp:featuredmedia"][0].source_url;
+  document.querySelector(".PPproductimg img").src =
+    wine._embedded["wp:featuredmedia"][0].source_url;
 
   //     document.querySelector(".PPproductimg img").src =
   //       wine._links["wp:featuredmedia"][0].source_url;
@@ -94,8 +95,8 @@ function showProductList(wine) {
   myClone.querySelector(".relatedPrice").textContent = `DKK ${wine.price}`;
 
   // //image
-  // myClone.querySelector(".relatedimg img").src =
-  //   wine["wp:featuredmedia"][0].source_url;
+  myClone.querySelector(".relatedimg img").src =
+    wine._embedded["wp:featuredmedia"][0].source_url;
 
   //select parent
   const parent = document.querySelector(".related_parent_container");
