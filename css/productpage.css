@@ -237,11 +237,11 @@ h2.PPname {
   background-color: var(--color-navy);
   transition: all 0.2s ease;
 }
-.borderA {
+.borderB {
   border-right: 3px dashed var(--color-navy);
   padding: 0.4rem;
 }
-.borderB {
+.borderA {
   padding: 0.4rem;
 }
 .related_parent_container {
