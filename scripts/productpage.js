@@ -62,6 +62,124 @@ function showWine(wine) {
 
   //     document.querySelector(".PPproductimg img").src =
   //       wine._links["wp:featuredmedia"][0].source_url;
+
+  // CHARACTERISTICS
+
+  // LIGHTNESS
+  if (wine.light_bold === "1") {
+    document.querySelector("#l1").classList.add("red");
+  }
+  if (wine.light_bold === "2") {
+    document.querySelector("#l1").classList.add("red");
+    document.querySelector("#l2").classList.add("red");
+  }
+  if (wine.light_bold === "3") {
+    document.querySelector("#l1").classList.add("red");
+    document.querySelector("#l2").classList.add("red");
+    document.querySelector("#l3").classList.add("red");
+  }
+
+  if (wine.light_bold === "4") {
+    document.querySelector("#l1").classList.add("red");
+    document.querySelector("#l2").classList.add("red");
+    document.querySelector("#l3").classList.add("red");
+    document.querySelector("#l4").classList.add("red");
+  }
+
+  if (wine.light_bold === "5") {
+    document.querySelector("#l1").classList.add("red");
+    document.querySelector("#l2").classList.add("red");
+    document.querySelector("#l3").classList.add("red");
+    document.querySelector("#l4").classList.add("red");
+    document.querySelector("#l5").classList.add("red");
+  }
+
+  // SMOOTHNESS
+  if (wine.smooth_tannin === "1") {
+    document.querySelector("#s1").classList.add("red");
+  }
+  if (wine.smooth_tannin === "2") {
+    document.querySelector("#s1").classList.add("red");
+    document.querySelector("#s2").classList.add("red");
+  }
+  if (wine.smooth_tannin === "3") {
+    document.querySelector("#s1").classList.add("red");
+    document.querySelector("#s2").classList.add("red");
+    document.querySelector("#s3").classList.add("red");
+  }
+
+  if (wine.smooth_tannin === "4") {
+    document.querySelector("#s1").classList.add("red");
+    document.querySelector("#s2").classList.add("red");
+    document.querySelector("#s3").classList.add("red");
+    document.querySelector("#s4").classList.add("red");
+  }
+
+  if (wine.smooth_tannin === "5") {
+    document.querySelector("#s1").classList.add("red");
+    document.querySelector("#s2").classList.add("red");
+    document.querySelector("#s3").classList.add("red");
+    document.querySelector("#s4").classList.add("red");
+    document.querySelector("#s5").classList.add("red");
+  }
+
+  // DRYNESS
+  if (wine.dry_sweet === "1") {
+    document.querySelector("#d1").classList.add("red");
+  }
+  if (wine.dry_sweet === "2") {
+    document.querySelector("#d1").classList.add("red");
+    document.querySelector("#d2").classList.add("red");
+  }
+  if (wine.dry_sweet === "3") {
+    document.querySelector("#d1").classList.add("red");
+    document.querySelector("#d2").classList.add("red");
+    document.querySelector("#d3").classList.add("red");
+  }
+
+  if (wine.dry_sweet === "4") {
+    document.querySelector("#d1").classList.add("red");
+    document.querySelector("#d2").classList.add("red");
+    document.querySelector("#d3").classList.add("red");
+    document.querySelector("#d4").classList.add("red");
+  }
+
+  if (wine.dry_sweet === "5") {
+    document.querySelector("#d1").classList.add("red");
+    document.querySelector("#d2").classList.add("red");
+    document.querySelector("#d3").classList.add("red");
+    document.querySelector("#d4").classList.add("red");
+    document.querySelector("#d5").classList.add("red");
+  }
+
+  // ACIDITY
+  if (wine.soft_acidic === "1") {
+    document.querySelector("#a1").classList.add("red");
+  }
+  if (wine.soft_acidic === "2") {
+    document.querySelector("#a1").classList.add("red");
+    document.querySelector("#a2").classList.add("red");
+  }
+  if (wine.soft_acidic === "3") {
+    document.querySelector("#a1").classList.add("red");
+    document.querySelector("#a2").classList.add("red");
+    document.querySelector("#a3").classList.add("red");
+  }
+
+  if (wine.soft_acidic === "4") {
+    document.querySelector("#a1").classList.add("red");
+    document.querySelector("#a2").classList.add("red");
+    document.querySelector("#a3").classList.add("red");
+    document.querySelector("#a4").classList.add("red");
+  }
+
+  if (wine.soft_acidic === "5") {
+    document.querySelector("#a1").classList.add("red");
+    document.querySelector("#a2").classList.add("red");
+    document.querySelector("#a3").classList.add("red");
+    document.querySelector("#a4").classList.add("red");
+    document.querySelector("#a5").classList.add("red");
+  }
 }
 
 //for each items in the related products list
