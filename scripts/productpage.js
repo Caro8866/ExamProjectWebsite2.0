@@ -13,6 +13,9 @@ fetch(url)
 
 function showWine(wine) {
   console.log(wine);
+  // breadcrumb
+  document.querySelector(".categoryName").textContent =
+    wine._embedded["wp:term"][0][0].slug;
   // name
   document.querySelector(".PPtitle").textContent = wine.title.rendered;
 
