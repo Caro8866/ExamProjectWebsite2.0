@@ -14,9 +14,18 @@ async function loadWines() {
   );
   const data = await response.json();
   displayData(data);
+  displayBreadcrumb(data);
 }
 
 //POPULATE PAGE
+
+function displayBreadcrumb(wine) {
+  document.querySelector(".categoryName").textContent = wine.wine_type;
+
+  if ((wine.wine_type = 1))
+    document.querySelector(".categoryName").textContent = "Champagne";
+}
+
 function displayData(wines) {
   console.log(wines);
 

@@ -22,6 +22,13 @@ fetch(url2)
 //populate the page
 function showWine(wine) {
   console.log(wine);
+
+  //breadcrumb
+  document.querySelector(".categoryName").textContent = wine.wine_type;
+
+  document
+    .querySelector(".wineCategoryLink")
+    .setAttribute("href", `productList.html?category/${wine.categories}`);
   // name
   document.querySelector(".PPtitle").textContent = wine.title.rendered;
 
